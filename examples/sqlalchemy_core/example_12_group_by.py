@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     # GROUP BY clause is specified by group_by method.
     # The below query is roughly equivalent to
-    # SELECT Title, SUM(UnitPrice) as Total
+    # SELECT Title, SUM(UnitPrice) as Price
     # FROM Albums
     # JOIN Tracks ON Albums.AlbumId = Tracks.AlbumId GROUP BY albums.AlbumId
     # LIMIT 5
