@@ -3,7 +3,7 @@ from sqlalchemy import create_engine, MetaData
 from sqlalchemy.sql import select
 
 if __name__ == '__main__':
-    engine = create_engine('sqlite:///../chinook.db', echo=False)
+    engine = create_engine('sqlite:///../chinook.db', echo=True)
     meta = MetaData()
     meta.reflect(bind=engine)
     connection = engine.connect()

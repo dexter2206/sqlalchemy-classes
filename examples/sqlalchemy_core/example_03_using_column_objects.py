@@ -15,3 +15,6 @@ if __name__ == '__main__':
         print(f'{row[artists.c.ArtistId]}: {row[artists.c.Name]}')
     # We haven't used all results, so we close the results object explicitly. Usually there is no need to do it.
     results.close()
+    print(meta.tables.keys())
+    for column in artists.c:
+        print(f'{column.name} {column.type}')
